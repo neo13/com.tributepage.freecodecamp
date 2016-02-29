@@ -7,7 +7,8 @@ $typographi-color:			#555;
 
 
 // header
-div.header-container {
+header {
+
 	width: 100%;
 	margin-bottom: 25px;
 
@@ -38,7 +39,45 @@ div.header-container {
 	}
 }
 
-div.affix {
-	position: fixed;
-	top: 10px;
+div#side-nav {
+	display: inline-block;;
+
+	&.affix {
+		position: fixed;
+		top: 10px;
+	}
+}
+
+section {
+	margin-bottom: 15px;
+
+	legend {
+		color: $typographi-color;
+		font-weight: bold;
+		font-size: 14pt;
+	}
+	p {
+		color: $typographi-color;
+		font-weight: 200;
+		font-size: 12.3pt;
+	}
+	blockquote p {
+		font-style: italic;
+	}
+}
+
+footer.footer {
+	width: 100%;
+	margin-top: 25px;
+	padding-top: 15px;
+	text-align: center;
+	border-top: lighten($typographi-color, 17%) double 3px;
+	p, a {
+		color: $typographi-color;
+		font-weight: bold;
+	}
+	a:hover {
+		text-decoration: none;
+		color: darken($typographi-color, 17%);
+	}
 }
