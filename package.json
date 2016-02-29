@@ -1,0 +1,28 @@
+{
+  "name": "com.tributepage.freecodecamp",
+  "version": "0.0.1-beta",
+  "homepage": "https://github.com/neo13/com.tributepage.freecodecamp",
+  "authors": [
+    "Neo13<a.derakhshan.iut@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neo13/com.tributepage.freecodecamp.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "init": "npm install && mkdir sass && mkdir js && mkdir dist && echo 'npm-debug.log\nnode_modules/*\n' > .gitignore && touch index.html && touch bower.json",
+    "css": "node-sass --output-style compact sass/main.scss -o dist",
+    "css:watch": "npm run css && node-sass --output-style compact sass/main.scss -o dist -w",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "description": "A Tribute to Dr. Mossadegh: Iranian revolutionary prime minister",
+  "main": "index.html",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "bootstrap-sass": "^3.3.6",
+    "jasny-bootstrap": "^3.1.3",
+    "jquery": "^2.2.1",
+    "node-sass": "^3.4.2"
+  }
+}

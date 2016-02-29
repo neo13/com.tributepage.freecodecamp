@@ -1,0 +1,44 @@
+// override font path
+$icon-font-path: 			"fonts/";
+$typographi-color:			#555;
+
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+
+// header
+div.header-container {
+	width: 100%;
+	margin-bottom: 25px;
+
+	div#title-container {
+		height: 40px;
+		line-height: 40px;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 20px;
+		font-weight: 800;
+
+		a {
+			color: $typographi-color;
+
+			&:hover {
+				text-decoration: none;
+				color: darken($typographi-color, 17%)
+			}
+		}
+	}
+
+	div#parallax-container {
+		height: 450px;
+		background: url('../img/parallax.jpeg');
+		background-position: bottom left;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+div.affix {
+	position: fixed;
+	top: 10px;
+}
