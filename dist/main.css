@@ -100,7 +100,7 @@ td, th { padding: 0; }
   .table td, .table th { background-color: #fff !important; }
   .table-bordered th, .table-bordered td { border: 1px solid #ddd !important; } }
 
-@font-face { font-family: 'Glyphicons Halflings'; src: url(font-path("fonts/glyphicons-halflings-regular.eot")); src: url(font-path("fonts/glyphicons-halflings-regular.eot?#iefix")) format("embedded-opentype"), url(font-path("fonts/glyphicons-halflings-regular.woff2")) format("woff2"), url(font-path("fonts/glyphicons-halflings-regular.woff")) format("woff"), url(font-path("fonts/glyphicons-halflings-regular.ttf")) format("truetype"), url(font-path("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")) format("svg"); }
+@font-face { font-family: 'Glyphicons Halflings'; src: url(font-path("../fonts/glyphicons-halflings-regular.eot")); src: url(font-path("../fonts/glyphicons-halflings-regular.eot?#iefix")) format("embedded-opentype"), url(font-path("../fonts/glyphicons-halflings-regular.woff2")) format("woff2"), url(font-path("../fonts/glyphicons-halflings-regular.woff")) format("woff"), url(font-path("../fonts/glyphicons-halflings-regular.ttf")) format("truetype"), url(font-path("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular")) format("svg"); }
 
 .glyphicon { position: relative; top: 1px; display: inline-block; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -2676,13 +2676,19 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 header { width: 100%; margin-bottom: 25px; }
 
+header div#offcanvas-nav-menu-icon-container { visibility: hidden; float: left; margin-left: 3px; margin-top: 3px; }
+
+@media screen and (max-width: 768px) { header div#offcanvas-nav-menu-icon-container { visibility: visible; } }
+
 header div#title-container { height: 40px; line-height: 40px; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 1px; background-color: #efefef; border-bottom: #dddddd solid 1px; }
+
+@media screen and (max-width: 496px) { header div#title-container { height: 80px; } }
 
 header div#title-container a { color: #555; }
 
 header div#title-container a:hover { text-decoration: none; color: #2a2a2a; }
 
-header div#parallax-container { height: 450px; background: url("../img/parallax.jpeg"); background-position: bottom left; background-repeat: no-repeat; background-size: cover; }
+header div#parallax-container { height: 450px; background: url("../img/parallax.jpeg"); background-position: bottom center; background-repeat: no-repeat; background-size: cover; }
 
 div#side-nav { display: inline-block; }
 

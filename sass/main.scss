@@ -1,5 +1,5 @@
 // override font path
-$icon-font-path: 			"fonts/";
+$icon-font-path: 			"../fonts/";
 $background-color:			#efefef; 
 $typographi-color:			#555;
 
@@ -13,6 +13,17 @@ header {
 	width: 100%;
 	margin-bottom: 25px;
 
+	div#offcanvas-nav-menu-icon-container {
+		visibility: hidden;
+		float: left;
+		margin-left: 3px;
+		margin-top: 3px;
+
+		@media screen and (max-width: 768px) {
+			visibility: visible;
+		}
+	}
+
 	div#title-container {
 		height: 40px;
 		line-height: 40px;
@@ -23,6 +34,11 @@ header {
 		margin-bottom: 1px;
 		background-color: $background-color;
 		border-bottom: darken($background-color, 7%) solid 1px;
+
+		@media screen and (max-width: 496px) {
+			height: 80px;
+		}
+
 		a {
 			color: $typographi-color;
 
@@ -36,7 +52,7 @@ header {
 	div#parallax-container {
 		height: 450px;
 		background: url('../img/parallax.jpeg');
-		background-position: bottom left;
+		background-position: bottom center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
