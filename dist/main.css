@@ -2676,23 +2676,26 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 header { width: 100%; margin-bottom: 25px; }
 
-header div#offcanvas-nav-menu-icon-container { visibility: hidden; float: left; margin-left: 3px; margin-top: 3px; }
-
-@media screen and (max-width: 768px) { header div#offcanvas-nav-menu-icon-container { visibility: visible; } }
-
-header div#title-container { height: 40px; line-height: 40px; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 1px; background-color: #efefef; border-bottom: #dddddd solid 1px; }
+header div#title-container { height: 45px; line-height: 45px; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 1px; background-color: #efefef; border-bottom: #dddddd solid 1px; }
 
 @media screen and (max-width: 496px) { header div#title-container { height: 80px; } }
+
+@media screen and (max-width: 768px) { header div#title-container { width: 100%; position: fixed; top: 0; left: 0; z-index: 999; } }
 
 header div#title-container a { color: #555; }
 
 header div#title-container a:hover { text-decoration: none; color: #2a2a2a; }
 
+header div#title-container div#offcanvas-nav-menu-icon-container { visibility: hidden; float: left; margin-left: 3px; }
+
+@media screen and (max-width: 768px) { header div#title-container div#offcanvas-nav-menu-icon-container { visibility: visible; } }
+
 header div#parallax-container { height: 450px; background: url("../img/parallax.jpeg"); background-position: bottom center; background-repeat: no-repeat; background-size: cover; }
 
-div#side-nav { display: inline-block; }
+@media screen and (min-width: 769px) { div#side-nav { display: inline-block; }
+  div#side-nav.affix { position: fixed; top: 10px; } }
 
-div#side-nav.affix { position: fixed; top: 10px; }
+@media screen and (max-width: 768px) { div#side-nav { position: fixed; display: block; overflow: hidden; top: 0; bottom: 0; left: -300px; height: 100%; width: 300px; z-index: 1000; } }
 
 section { margin-bottom: 15px; }
 
