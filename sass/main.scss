@@ -1,5 +1,6 @@
 // override font path
 $icon-font-path: 			"fonts/";
+$background-color:			#efefef; 
 $typographi-color:			#555;
 
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -19,7 +20,9 @@ header {
 		text-align: center;
 		font-size: 20px;
 		font-weight: 800;
-
+		margin-bottom: 1px;
+		background-color: $background-color;
+		border-bottom: darken($background-color, 7%) solid 1px;
 		a {
 			color: $typographi-color;
 
@@ -70,11 +73,16 @@ footer.footer {
 	width: 100%;
 	margin-top: 25px;
 	padding-top: 15px;
+	padding-bottom: 15px;
 	text-align: center;
-	border-top: lighten($typographi-color, 17%) double 3px;
+	background-color: $background-color;
+	border-top: darken($background-color, 7%) solid 1px;
 	p, a {
 		color: $typographi-color;
 		font-weight: bold;
+	}
+	p:last-child {
+		margin-bottom: 0;
 	}
 	a:hover {
 		text-decoration: none;

@@ -2676,7 +2676,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 header { width: 100%; margin-bottom: 25px; }
 
-header div#title-container { height: 40px; line-height: 40px; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 800; }
+header div#title-container { height: 40px; line-height: 40px; vertical-align: middle; text-align: center; font-size: 20px; font-weight: 800; margin-bottom: 1px; background-color: #efefef; border-bottom: #dddddd solid 1px; }
 
 header div#title-container a { color: #555; }
 
@@ -2696,8 +2696,10 @@ section p { color: #555; font-weight: 200; font-size: 12.3pt; }
 
 section blockquote p { font-style: italic; }
 
-footer.footer { width: 100%; margin-top: 25px; padding-top: 15px; text-align: center; border-top: gray double 3px; }
+footer.footer { width: 100%; margin-top: 25px; padding-top: 15px; padding-bottom: 15px; text-align: center; background-color: #efefef; border-top: #dddddd solid 1px; }
 
 footer.footer p, footer.footer a { color: #555; font-weight: bold; }
+
+footer.footer p:last-child { margin-bottom: 0; }
 
 footer.footer a:hover { text-decoration: none; color: #2a2a2a; }
